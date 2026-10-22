@@ -3,7 +3,7 @@
 Every page that collects comments posts JSON events to its ntfy topic. This script polls each topic,
 merges new events into <name>.json (deduplicated by ntfy message id) and rewrites <name>.md for reading.
 """
-import json, os, time, urllib.request
+import base64, json, os, time, urllib.request
 from datetime import datetime, timezone, timedelta
 
 TOPICS = {"clinotrend-gbp": "acc-clinotrend-gbp-591837a28a"}
@@ -21,10 +21,18 @@ def poll(topic):
             continue
         if m.get("event") != "message":
             continue
-        try:
-            body = json.loads(m.get("message", ""))
-        except ValueError:
-            body = {"type": "comment", "text": m.get("message", ""), "id": m["id"]}
+        body = None
+        for t in m.get("tags", []) or []:
+            if t.startswith("ev:"):
+                try:
+                    raw = t[3:] + "=" * (-len(t[3:]) % 4)
+                    body = json.loads(base64.urlsafe_b64decode(raw).decode("utf-8"))
+                except Exception:
+                    body = None
+        if body is None:
+            body = {"type": "comment", "id": m["id"]}
+        if body.get("type", "comment") == "comment":
+            body["text"] = m.get("message", "")
         if not isinstance(body, dict):
             continue
         body["_ntfy"] = m["id"]
