@@ -32,7 +32,9 @@ def poll(topic):
         if body is None:
             body = {"type": "comment", "id": m["id"]}
         if body.get("type", "comment") == "comment":
-            body["text"] = m.get("message", "")
+            msg = m.get("message", "")
+            cut = msg.rfind("\n\nAt: ")
+            body["text"] = msg[:cut] if cut > -1 else msg
         if not isinstance(body, dict):
             continue
         body["_ntfy"] = m["id"]
