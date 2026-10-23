@@ -6,7 +6,10 @@ merges new events into <name>.json (deduplicated by ntfy message id) and rewrite
 import base64, json, os, time, urllib.request
 from datetime import datetime, timezone, timedelta
 
-TOPICS = {"clinotrend-gbp": "acc-clinotrend-gbp-591837a28a"}
+TOPICS = {
+    "clinotrend-gbp": "acc-clinotrend-gbp-591837a28a",    # GBP preview
+    "clinotrend-site": "acc-clinotrend-site-5c154d575d",  # website preview (comments carry the page path)
+}
 SAST = timezone(timedelta(hours=2))
 
 def poll(topic):
@@ -71,6 +74,8 @@ for name, topic in TOPICS.items():
     for i, c in enumerate(live, 1):
         when = datetime.fromtimestamp(c.get("_time") or 0, SAST).strftime("%d %b %Y %H:%M")
         md.append(f"## {i}. {c.get('author') or 'Anonymous'}, {when} SAST")
+        if c.get("page"):
+            md.append(f"Page: {c['page']}" + (f" ({c['dev']})" if c.get("dev") else ""))
         md.append(f"Where: {c.get('where') or 'page'}")
         md.append("")
         md.append(str(c.get("text", "")).strip())
