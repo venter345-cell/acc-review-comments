@@ -38,6 +38,8 @@ def poll(topic):
             msg = m.get("message", "")
             cut = msg.rfind("\n\nAt: ")
             body["text"] = msg[:cut] if cut > -1 else msg
+            if cut > -1 and not body.get("where"):
+                body["where"] = msg[cut + 6:]
         if not isinstance(body, dict):
             continue
         body["_ntfy"] = m["id"]
