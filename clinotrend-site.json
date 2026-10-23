@@ -1,1 +1,106 @@
-{"topic": "acc-clinotrend-site-5c154d575d", "events": []}
+{
+ "topic": "acc-clinotrend-site-5c154d575d",
+ "events": [
+  {
+   "type": "comment",
+   "id": "mvkuh48eb958a8",
+   "src": "site-preview",
+   "page": "/aviation-medicals/",
+   "path": "#classes>0.0",
+   "rx": 0.0831,
+   "ry": 0.5013,
+   "px": 0.117,
+   "py": 0.1745,
+   "dev": "Android 393px",
+   "author": "ACC QA",
+   "ts": 1792752374450,
+   "text": "TEST (ACC QA, please ignore): pixel5 on /aviation-medicals/",
+   "where": "Website preview /aviation-medicals/, Which medical do you need?: \"Which medical do you need?\"",
+   "_ntfy": "QZ3AFJwNQM4G",
+   "_time": 1792752374
+  },
+  {
+   "type": "delete",
+   "id": "mvkuh48eb958a8",
+   "ts": 1792752380249,
+   "_ntfy": "1j9OF31SemyF",
+   "_time": 1792752380
+  },
+  {
+   "type": "comment",
+   "id": "mvkuhgeswvh5vp",
+   "src": "site-preview",
+   "page": "/contact/",
+   "path": "#root>1.1.0.2",
+   "rx": 0.0727,
+   "ry": 0.5,
+   "px": 0.4333,
+   "py": 0.0079,
+   "dev": "iOS 390px",
+   "author": "ACC QA",
+   "ts": 1792752389999,
+   "text": "TEST (ACC QA, please ignore): iphone14 on /contact/",
+   "where": "Website preview /contact/, Header: \"Call 011 568 7979\"",
+   "_ntfy": "20E5TOKtkgSX",
+   "_time": 1792752389
+  },
+  {
+   "type": "delete",
+   "id": "mvkuhgeswvh5vp",
+   "ts": 1792752395215,
+   "_ntfy": "cjJ46F6HNGAh",
+   "_time": 1792752395
+  },
+  {
+   "type": "comment",
+   "id": "mvkuhs1i7hwmhi",
+   "src": "site-preview",
+   "page": "/blog/renew-sacaa-class-2-medical/",
+   "path": "#main>0.6.0.2",
+   "rx": 0.1042,
+   "ry": 0.5,
+   "px": 0.1438,
+   "py": 0.0206,
+   "dev": "iOS 320px",
+   "author": "ACC QA",
+   "ts": 1792752405117,
+   "text": "TEST (ACC QA, please ignore): iphoneSE on /blog/renew-sacaa-class-2-medical/",
+   "where": "Website preview /blog/renew-sacaa-class-2-medical/, How to renew your SACAA Class 2 medical, step by s: \"How to renew your SACAA Class 2 medical, step by step\"",
+   "_ntfy": "qdY5ErzZw03O",
+   "_time": 1792752405
+  },
+  {
+   "type": "delete",
+   "id": "mvkuhs1i7hwmhi",
+   "ts": 1792752410515,
+   "_ntfy": "e13B0hpq9riR",
+   "_time": 1792752410
+  },
+  {
+   "type": "comment",
+   "id": "mvkui42xjqffyb",
+   "src": "site-preview",
+   "page": "/",
+   "path": "#main>0.6.0.0.1",
+   "rx": 0.0447,
+   "ry": 0.5,
+   "px": 0.0986,
+   "py": 0.0971,
+   "dev": "desktop 1440px",
+   "author": "ACC QA",
+   "ts": 1792752420798,
+   "text": "TEST (ACC QA, please ignore): desktop on /",
+   "where": "Website preview /, Aviation medicals for pilots and cabin crew: \"Aviation medicals for pilots and cabin crew\"",
+   "_ntfy": "5eGoati4DuIN",
+   "_time": 1792752420
+  },
+  {
+   "type": "delete",
+   "id": "mvkui42xjqffyb",
+   "ts": 1792752429468,
+   "_ntfy": "aSeg5845E8Yd",
+   "_time": 1792752429
+  }
+ ],
+ "updated": 1792752466
+}
