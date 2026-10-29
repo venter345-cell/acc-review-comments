@@ -9,6 +9,7 @@ from datetime import datetime, timezone, timedelta
 TOPICS = {
     "clinotrend-gbp": "acc-clinotrend-gbp-591837a28a",    # GBP preview
     "clinotrend-site": "acc-clinotrend-site-5c154d575d",  # website preview (comments carry the page path)
+    "clinotrend-content": "acc-clinotrend-content-4dc2a79297",  # content (articles) review preview, 29 Oct 2026
 }
 SAST = timezone(timedelta(hours=2))
 

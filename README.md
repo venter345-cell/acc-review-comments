@@ -6,5 +6,6 @@ Comments left on Ads Creation Centre client preview pages (tap to comment). Page
 |---|---|---|
 | https://proposals.acreationc.com/clinotrend/gbp-preview/ | [clinotrend-gbp.md](clinotrend-gbp.md) | https://ntfy.sh/acc-clinotrend-gbp-591837a28a |
 | https://proposals.acreationc.com/clinotrend/site-preview/ (website, every page) | [clinotrend-site.md](clinotrend-site.md) | https://ntfy.sh/acc-clinotrend-site-5c154d575d |
+| https://proposals.acreationc.com/clinotrend/content-preview/ (articles for Dr Ndhlovu) | [clinotrend-content.md](clinotrend-content.md) | https://ntfy.sh/acc-clinotrend-content-4dc2a79297 |
 
 No patient information belongs here. Comments are review notes on marketing drafts only.
